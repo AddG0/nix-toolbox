@@ -1,0 +1,11 @@
+
+# Nix
+.direnv/
+.pre-commit-config.yaml
+result/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store

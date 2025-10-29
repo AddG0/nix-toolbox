@@ -1,0 +1,15 @@
+version: 2
+
+updates:
+  # Update Nix flake inputs
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+
+  # This will be used once GitHub supports flake updates natively
+  # For now, you can use https://github.com/DeterminateSystems/flake-update-action
+  # or update manually with: nix flake update
